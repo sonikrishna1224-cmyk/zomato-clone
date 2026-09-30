@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(226, 55, 68, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: #ffd3d3;
+}
+
+/* Hero Section */
+main section:first-child {
+    height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)),
+    url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main section:first-child img {
+    width: 260px;
+    margin-bottom: 20px;
+}
+
+main section:first-child p {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main input {
+    width: 60%;
+    max-width: 650px;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Food Delivery Section */
+.food-delivery {
+    padding: 80px 10%;
+    text-align: center;
+    background: #fff5f5;
+}
+
+.food-delivery h2 {
+    font-size: 2.5rem;
+    color: #e23744;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #e23744;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: #181818;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    header ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main section:first-child p {
+        font-size: 2rem;
+    }
+
+    main input {
+        width: 90%;
+    }
+
+    .food-delivery h2 {
+        font-size: 2rem;
+    }
+}
